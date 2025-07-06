@@ -1,7 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Phuoc Minh Hieu - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Pham Phuoc Minh Hieu</a>
+            <div class="d-flex align-items-center">
+                <button class="theme-toggle me-3" id="themeToggle" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Pham Phuoc Minh Hieu</h1>
+            <p>Data Science Student & ML Enthusiast</p>
+            <a href="#about" class="btn btn-custom">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-content">
+                        <div class="flex-shrink-0">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/computer-shop-management-a2cdd.appspot.com/o/Hi%E1%BA%BFu.jpg?alt=media&token=c8079d02-ce6c-44df-bebe-1c4c5b1f729d" alt="Profile Picture" class="profile-img">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h3 class="mb-3">Hello! I'm Hieu</h3>
+                            <p>I'm a passionate Information Technology student majoring in Data Science with a good foundation in Machine Learning and Deep Learning. Currently pursuing a Bachelor's degree at Ho Chi Minh City University of Management and Technology, I am actively looking for an internship opportunity in Machine Learning, Deep Learning or AI where I can apply my analytical skills to solve real-world data-driven problems.</p>
+                            <p>I enjoy researching and testing machine learning models to better understand their behavior and improve their performance. I am passionate about extracting insights from complex datasets and building predictive systems. In my spare time, I will try to research existing models and learn more about new models.</p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <p><strong>Location:</strong> Ho Chi Minh, Viet Nam</p>
+                                    <p><strong>Education:</strong> Information Technology (Data Science), University of Management and Technology Ho Chi Minh City</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Expected Graduation:</strong> July 2026</p>
+                                    <p><strong>Interests:</strong> Machine Learning, Deep Learning, Data Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="section-padding alt-bg">
+    <div class="container">
+        <div class="section-title">
+            <h2>Skills</h2>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="row skills-row">
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Data Science</h4>
+                        <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-brain"></i>
+                        <h4>Machine Learning</h4>
+                        <p>Scikit-learn, Random Forest, SVM, Regression Models</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-robot"></i>
+                        <h4>Deep Learning</h4>
+                        <p>TensorFlow, Keras, PyTorch, CNN, RNN, Neural Networks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-code"></i>
+                        <h4>Web Development</h4>
+                        <p>React, GraphQL, FastAPI, SQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row skills-row mt-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-database"></i>
+                        <h4>Database & Tools</h4>
+                        <p>MySQL, PostgreSQL, MongoDB, SQL Server, Tableau</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fab fa-git-alt"></i>
+                        <h4>Development Tools</h4>
+                        <p>Git, GitHub, Jupyter, VS Code, Docker, Google Cloud</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-calculator"></i>
+                        <h4>Statistics & Math</h4>
+                        <p>Data structure & Algorithms, Combinatorics & Graph Theory, Probability & statistics, Linear Algebra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="skill-item">
+                    <div class="skill-content">
+                        <i class="fas fa-search"></i>
+                        <h4>Specialized</h4>
+                        <p>NLP, Computer Vision, Image Processing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Art Detection</h3>
+                            <p>Trained a deep learning model to identify AI-generated art using convolutional neural networks and transfer learning, reaching 84% classification accuracy.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Scikit-learn</span>
+                                <span class="tech-badge">Keras</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Text To Image</h3>
+                            <p>Built a deep learning web application for text-to-image generation using a fine-tuned Stable Diffusion model, with a FastAPI backend and React frontend.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">TensorFlow</span>
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Car Market App</h3>
+                            <p>Built an iOS car marketplace app with Firebase for authentication, Firestore for real-time data, and image storage.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Swift</span>
+                                <span class="tech-badge">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Let's connect and discuss opportunities</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h5>Email</h5>
+                                        <p>hieuphamminh976@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h5>Location</h5>
+                                        <p>Ho Chi Minh, Viet Nam</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <h5>Availability</h5>
+                                        <p>Open for internships</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-file"></i>
+                                <div>
+                                    <h5>
+                                        My Resume
+                                    </h5>
+                                    <p>
+                                        <a href="https://firebasestorage.googleapis.com/v0/b/computer-shop-management-a2cdd.appspot.com/o/Pham-Phuoc-Minh-Hieu-CV.pdf?alt=media&token=8bd38ebe-a85f-4746-83e6-29a2d276343f"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        download>
+                                        Download Resume
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/hieupham976/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/hieuphampm" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 footer">
+        <div class="container">
+            <p>&copy; Pham Phuoc Minh Hieu. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
